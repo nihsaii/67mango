@@ -2,8 +2,8 @@ import random
 import string
 import requests
 from dhooks import Webhook
-blackmen = input("Enter amount of nitros (inf for inf gens): ")
-if blackmen == "inf":
+lebrons = input("Enter amount of nitros (inf for inf gens): ")
+if lebrons == "inf":
     while True:
         letters = string.ascii_letters
         gamer = ''.join(random.choice(letters) for i in range(16)) 
@@ -17,9 +17,9 @@ if blackmen == "inf":
         else:
             print(f"Invalid Nitro Code: {gamer1}")
     else:
-        blackmen = int(blackmen)
-        whitemen = 0
-        while whitemen <= blackmen:
+        lebrons = int(lebrons)
+        ploopy = 0
+        while ploopy <= lebrons:
             letters = string.ascii_letters
             gamer = ''.join(random.choice(letters) for i in range(16)) 
             gamer1 = "https://discord.gift/"+gamer
@@ -31,4 +31,4 @@ if blackmen == "inf":
                 hook.send("@everyone VALID NITRO CODE " + gamer)
             else:
                 print(f"Invalid Nitro Code: {gamer1}")
-            whitemen = whitemen + 1
+            ploopy = ploopy + 1
